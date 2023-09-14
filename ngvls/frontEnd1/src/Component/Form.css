@@ -1,0 +1,107 @@
+/* Form.css */
+
+/* Container for both forms */
+.form-container {
+    display: flex;
+    justify-content: space-between; /* Space between the two forms */
+    
+  }
+  
+  .custom-form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    align-self: self-start;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(179, 25, 25, 0.1);
+    animation: fadeIn 1s; /* Add a fade-in animation */ /* Adjust the width of each form */
+    margin: 10px; /* Add margin between the forms */
+  }
+  .yt-section{
+    display: flex;
+  justify-content: center;
+  align-items: center; 
+  min-height: 300px;
+
+}
+ 
+  
+
+  .left-section, .right-section, .notes-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .form-label {
+    font-size: 18px;
+    margin-top: 10px;
+    
+  }
+  
+  .input-with-dropdown {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .custom-input, .custom-textarea {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    size: 100;
+    max-lines: 2;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .language-dropdown {
+    margin-left: 20px; /* Adjust the margin as needed to separate the input and dropdown */
+  }
+  
+  .custom-button, .custom-button1, .custom-button2 {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start; /* Align the button to the left */
+    margin: 10px 0 ; /* Add margin between the button and input */
+  }
+  
+  .custom-button:hover, .custom-button1:hover, .custom-button2:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+/* Animated Background */
+@keyframes animateBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+body {
+  animation: animateBackground 1s linear infinite;
+  background: linear-gradient(90deg, #f3c633, #149fc6,#f3c633); /* Adjust gradient colors */
+  background-size: 300% 100%;
+  overflow: hidden;
+}
