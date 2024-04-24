@@ -61,7 +61,6 @@ function Notes() {
   };
 
   return <div className='notes-section'>
-  {/* <label className='form-label'>Notes</label><br/> */}
   <h1>Notes</h1>
   <textarea
   rows={10}
